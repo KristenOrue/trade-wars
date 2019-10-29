@@ -1,3 +1,7 @@
+
+# Trade Wars Client Side
+## SE 201
+
 A bit of a posture, it's a bit of a stance. He's a bit of a flirt, but I'm 'a give it a chance
 I asked about his fam'ly, did you see his answer?
 His hands started fidgeting, he looked askance?
@@ -64,3 +68,6 @@ And I know
 She'll be happy as his bride
 And I know
 He will never be satisfied
+
+
+
