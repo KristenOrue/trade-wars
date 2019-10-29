@@ -1,6 +1,6 @@
 
 # Trade Wars Client Side
-## SE 201
+## SE 201 Project
 
 A bit of a posture, it's a bit of a stance. He's a bit of a flirt, but I'm 'a give it a chance
 I asked about his fam'ly, did you see his answer?
