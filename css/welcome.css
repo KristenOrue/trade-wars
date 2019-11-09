@@ -1,0 +1,10 @@
+/*
+Page: welcome.css
+Info: For general styling elements such as text, images, etc.
+*/
+
+/* Body Styles */
+body {
+    /*background-image: url("../images/space.jpg"); */
+    background-color: aquamarine;
+}
