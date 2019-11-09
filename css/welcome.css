@@ -5,6 +5,24 @@ Info: For general styling elements such as text, images, etc.
 
 /* Body Styles */
 body {
-    /*background-image: url("../images/space.jpg"); */
-    background-color: aquamarine;
+    background-image: url("../images/space.jpg");
+    margin: 250px;
+    text-align: center;
 }
+
+/* Specific welcome page elements */
+h1 {
+    color: whitesmoke;
+}
+
+/* Form and Input */
+input[type=text], select {
+    width: 33%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
