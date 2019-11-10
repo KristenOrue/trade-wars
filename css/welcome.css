@@ -11,17 +11,24 @@ body {
 }
 
 @font-face {
-    font-family: myFirstFont;
+    font-family: myFancyFont;
     src: url("../Fonts/BenguiatBold.ttf");
 }
 
 /* Specific welcome page elements */
 h1 {
-    color: whitesmoke;
-    font-family: myFirstFont;
+    /*color: whitesmoke;*/
+    color: #1c0502;
+    font-family: myFancyFont;
     font-size: 500%;
     text-decoration: overline;
     text-decoration: underline;
+    text-shadow: -0.05rem -0.05rem 1px #ed2b12,
+    0.05rem -0.05rem 1px #ed2b12,
+    -0.05rem 0.05rem 1px #ed2b12,
+    0.05rem 0.05rem 1px #ed2b12,
+    0 0 15px #630100,
+    0 0 20px #450100;
 }
 
 /* Form and Input */
