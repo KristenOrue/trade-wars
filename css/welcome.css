@@ -10,9 +10,18 @@ body {
     text-align: center;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url("../Fonts/BenguiatBold.ttf");
+}
+
 /* Specific welcome page elements */
 h1 {
     color: whitesmoke;
+    font-family: myFirstFont;
+    font-size: 500%;
+    text-decoration: overline;
+    text-decoration: underline;
 }
 
 /* Form and Input */
