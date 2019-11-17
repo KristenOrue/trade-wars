@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: myFancyFont;
-    src: url("../Fonts/BenguiatBold.ttf");
+    src: url("../fonts/BenguiatBold.ttf");
 }
 
 /* Specific welcome page elements */
