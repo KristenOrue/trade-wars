@@ -1,6 +1,99 @@
+/*Navigation Page css*/
+
 /*
 Page: main.css
 Info: For general styling elements such as text, images, etc.
 */
 
 /* Body Styles */
+/* Specific welcome page elements */
+/*Specifies the same h1 elements throughout site*/
+/*
+Page: welcome.css
+Info: For general styling elements such as text, images, etc.
+*/
+
+/* Body Styles */
+body {
+    background-image: url("../space.png");
+    background-image: url("../images/space.jpg"); 
+    margin: 250px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: myFancyFont;
+    src: url("../Fonts/BenguiatBold.ttf");
+}
+/* audio { 
+    display:none;
+ } */
+
+/* Specific welcome page elements */
+h1 {
+    color: #1c0502;
+    font-family: myFancyFont;
+    font-size: 500%;
+    text-decoration: underline;
+    text-shadow: -0.05rem -0.05rem 1px #ed2b12,
+    0.05rem -0.05rem 1px #ed2b12,
+    -0.05rem 0.05rem 1px #ed2b12,
+    0.05rem 0.05rem 1px #ed2b12,
+    0 0 15px #630100,
+    0 0 20px #450100;
+}
+/* Form and Input */
+input[type=text], select {
+    width: 33%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=Submit], select {
+    width: 33%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: myFancyFont;
+    font-size: 100%; 
+    background: #ed2b12;
+  }
+
+
+  @-webkit-keyframes pulse {
+    0% {
+      background-color: red;
+      opacity: 1.0;
+      -webkit-transform: scale(1.0) rotate(0deg);
+    }
+    33% {
+      background-color: blue;
+      opacity: 0.75;
+      -webkit-transform: scale(1.1) rotate(-5deg);
+    }
+    67% {
+      background-color: green;
+      opacity: 0.5;
+      -webkit-transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+      background-color: red;
+      opacity: 1.0;
+      -webkit-transform: scale(1.0) rotate(0deg);
+    }
+   }
+   
+   .pulsedbox {
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+   }
+
