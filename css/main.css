@@ -32,45 +32,30 @@ body {
 h1 {
     color: #1c0502;
     font-family: myFancyFont;
-    font-size: 250%;
+    font-size: 270%;
     text-decoration: underline;
     text-shadow: -0.05rem -0.05rem 1px #ed2b12,
     0.05rem -0.05rem 1px #ed2b12,
     -0.05rem 0.05rem 1px #ed2b12,
-    0.05rem 0.05rem 1px #ed2b12,
+    0.05rem 0.05rem 1px #450100,
     0 0 15px #630100,
     0 0 20px #450100;
 }
-
-body {
-    color: #fff;
-    font-family: monospace;
-    margin: 0;
-  }
-  
-  @media (min-width: 60rem) {
-    .grid {
-    grid-auto-rows: 25vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
   
   .grid__item {
-    animation: 1s linear 0s alternate infinite flicker;
-    /* background: black; */
-    /* opacity: 0.5; */
-    box-shadow: inset 0 0 2rem #ed2b12;
+    animation: 1s linear 2s alternate infinite flicker;
+    background: black;
     padding: 2rem;
   }
-
-  @media (min-width: 60rem) {
-    .comment {
-      grid-column: 2;
-    }
+  .grid {
+    background: #3dd3ed;
+    display: grid;
+    grid-auto-rows: 10vw;
+    grid-gap: .15rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   
   @keyframes flicker { from { 
     box-shadow: inset 0 0 1.5rem #ed2b12; } to { 
-    box-shadow: inset 0 0 1rem #ed2b12 }  }
-
+    box-shadow: inset 0 0 1rem #920705; }  }
 
