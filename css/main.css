@@ -30,9 +30,10 @@ body {
 
 /* Specific welcome page elements */
 h1 {
+    text-align: center;
     color: #1c0502;
     font-family: myFancyFont;
-    font-size: 270%;
+    font-size: 350%;
     text-decoration: underline;
     text-shadow: -0.05rem -0.05rem 1px #ed2b12,
     0.05rem -0.05rem 1px #ed2b12,
@@ -45,7 +46,7 @@ h1 {
   .grid__item {
     animation: 1s linear 2s alternate infinite flicker;
     background: black;
-    padding: 2rem;
+    padding: 1rem;
   }
   .grid {
     background: #3dd3ed;
@@ -53,6 +54,8 @@ h1 {
     grid-auto-rows: 10vw;
     grid-gap: .15rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 200px;
+    margin-top: 50px;
   }
   
   @keyframes flicker { from { 
