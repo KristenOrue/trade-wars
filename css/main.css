@@ -51,11 +51,11 @@ h1 {
   .grid {
     background: #3dd3ed;
     display: grid;
-    grid-auto-rows: 10vw;
+    grid-auto-rows: 5vw;
     grid-gap: .15rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: 200px;
-    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 300px;
+    margin-top: 70px;
   }
   
   @keyframes flicker { from { 
