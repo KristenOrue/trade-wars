@@ -42,23 +42,70 @@ h1 {
     0 0 15px #630100,
     0 0 20px #450100;
 }
-  
-  .grid__item {
-    animation: 1s linear 2s alternate infinite flicker;
-    background: black;
-    padding: 1rem;
-  }
-  .grid {
+
+h2{
+    animation: blinker 3s linear infinite;
+    text-align: center;
+    color: #FFC500;
+    font-family: myFancyFont;
+    font-size: 100%;
+}
+ 
+.grid {
     background: #3dd3ed;
     display: grid;
     grid-auto-rows: 5vw;
     grid-gap: .15rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 300px;
-    margin-top: 70px;
+    margin-top: 50px;
   }
+
+  .grid__item {
+    animation: 1s linear 2s alternate infinite flicker;
+    background: black;
+    padding: 1rem;
+  }
+
+
   
   @keyframes flicker { from { 
     box-shadow: inset 0 0 1.5rem #ed2b12; } to { 
-    box-shadow: inset 0 0 1rem #920705; }  }
+    box-shadow: inset 0 0 1rem #920705; } 
+}
+
+
+  @keyframes blinker {  
+      100% { opacity: 10; }
+}
+
+/* The status message box */
+.alert {
+    padding: 20px;
+    background-color:#FFC500;
+    opacity: 0.5;
+    color: black;
+    /* margin:200px; */
+    font-family: myFancyFont;
+    text-align: center;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: whitesmoke;
+  }
+
+
 
