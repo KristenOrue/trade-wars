@@ -63,7 +63,8 @@ h1 {
     grid-auto-rows: 5vw;
     grid-gap: .15rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 300px;
+    margin-left: 100px;
+    margin-right:700px;
     margin-top: 50px;
   }
 
@@ -79,8 +80,15 @@ h1 {
 }
 
 ul {
+  list-style-type: none;
     color: whitesmoke;
-    text-align: right;
+    text-align: left;
+    font-size: 30px;
+    background-image: url("../images/cargo2.jpg");
+    border:2px solid #ed2b12;
+    height: 400px;
+    width: 400px;
+    margin: auto;
 
 }
 
