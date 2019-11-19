@@ -31,7 +31,7 @@ h1 {
 .alert {
     animation: blinker 3s linear infinite;
     padding: 10px;
-    background-color:#3dd3ed;
+    background-color: rgba(61,211,237, 0.5);
     opacity: 0.5;
     margin-left:250px;
     margin-right: 250px;
