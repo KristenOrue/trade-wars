@@ -7,12 +7,29 @@ Info: Basic start up page
 
 <head>
     <title>Trade Wars</title>
-    <link href="ui/static/css/main.css" rel="stylesheet"/>
+    <link href="../static/css/main.css" rel="stylesheet"/>
 </head>
 
 <body>  
-        <h1>TRADE WARS</h1>
-        <h2 class="blinker">Status Message:</h2>
+    <!-- Header -->
+    <h1>TRADE WARS</h1>
+
+    <!-- Status Message -->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        STATUS MESSAGE:
+    </div>
+
+
+      <!-- Cargo Menu  -->
+      <ul type="Cargo">
+            <h2>Cargo</h2>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+    <!-- Grid -->
 
     <div class="grid">
         <section class="grid__item"></section>
@@ -76,11 +93,7 @@ Info: Basic start up page
         <section class="grid__item"></section>
         <section class="grid__item"></section>
       </div>
-      
-      <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            Status Message:
-      </div>
+
 </body>
 
 </html>

@@ -5,7 +5,6 @@ Info: For general styling elements such as text, images, etc.
 
 /* Body Styles */
 body {
-    background-image: url("../space.png");
     background-image: url("../images/space.jpg"); 
     margin: 250px;
     text-align: center;

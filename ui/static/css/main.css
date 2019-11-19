@@ -1,34 +1,15 @@
-/*Navigation Page css*/
-
-/*
-Page: main.css
-Info: For general styling elements such as text, images, etc.
-*/
-
-/* Body Styles */
-/* Specific welcome page elements */
-/*Specifies the same h1 elements throughout site*/
-/*
-Page: welcome.css
-Info: For general styling elements such as text, images, etc.
-*/
-
 /* Body Styles */
 body {
     background-image: url("../images/space.jpg"); 
     margin: 50px;
-    /* text-align: center; */ */
+    /* text-align: center; */
 }
 
 @font-face {
     font-family: myFancyFont;
-    src: url("../Fonts/BenguiatBold.ttf");
+    src: url("../fonts/BenguiatBold.ttf");
 }
-/* audio { 
-    display:none;
- } */
 
-/* Specific welcome page elements */
 h1 {
     text-align: center;
     color: #1c0502;
@@ -43,14 +24,36 @@ h1 {
     0 0 20px #450100;
 }
 
-h2{
+/* The status message box */
+.alert {
     animation: blinker 3s linear infinite;
-    text-align: center;
-    color: #FFC500;
+    padding: 10px;
+    background-color:#3dd3ed;
+    opacity: 0.5;
+    margin-left:250px;
+    margin-right: 250px;
+    color: black;
     font-family: myFancyFont;
-    font-size: 100%;
-}
- 
+    text-align: left;
+  }
+  
+  /* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: whitesmoke;
+  }
+
 .grid {
     background: #3dd3ed;
     display: grid;
@@ -67,45 +70,22 @@ h2{
     padding: 1rem;
   }
 
-
-  
-  @keyframes flicker { from { 
+@keyframes flicker { from { 
     box-shadow: inset 0 0 1.5rem #ed2b12; } to { 
     box-shadow: inset 0 0 1rem #920705; } 
 }
 
+ul {
+    color: whitesmoke;
+    text-align: right;
 
-  @keyframes blinker {  
-      100% { opacity: 10; }
 }
 
-/* The status message box */
-.alert {
-    padding: 20px;
-    background-color:#FFC500;
-    opacity: 0.5;
-    color: black;
-    /* margin:200px; */
-    font-family: myFancyFont;
-    text-align: center;
-  }
-  
-  /* The close button */
-  .closebtn {
-    margin-left: 15px;
-    color: whitesmoke;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* When moving the mouse over the close button */
-  .closebtn:hover {
-    color: whitesmoke;
-  }
+  /* @keyframes blinker {  
+      100% { opacity: 10; }
+} */
+
+
 
 
 
