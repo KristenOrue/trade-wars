@@ -63,8 +63,9 @@ h1 {
     grid-auto-rows: 5vw;
     grid-gap: .15rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 50px;
-    margin-right:700px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right:400px;
   }
 
   .grid__item {
@@ -82,19 +83,16 @@ ul {
     list-style-type: none;
     color: 	#D3D3D3;
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 3px 2px black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url("../images/cargo2.jpg");
     background-size: cover;                  
     border:5px solid #3dd3ed;
-    height: 400px;
-    width: 400px;
-    display: inline-block;
-    object-fit: cover;
-    margin-right: 100px;
-    margin-left: 900px;
-
+    height: 300px;
+    width: 300px;
+    float:right;
+    margin-top: 100px;
 }
 
   /* @keyframes blinker {  
