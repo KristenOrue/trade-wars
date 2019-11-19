@@ -1,15 +1,13 @@
+{{template "base" .}}
+
+{{define "welcome"}}
 <!DOCTYPE html>
-
-<!-- 
-Page: Welcome page
-Info: Basic start up page
--->
-
+<html lang="en">
 <head>
     <title>Trade Wars</title>
 
-    <link href="/css/main.css" rel="stylesheet" />
-    <link href="/css/welcome.css" rel="stylesheet" />
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/welcome.css" rel="stylesheet" />
 </head>
 
 <body>  
@@ -30,5 +28,5 @@ Info: Basic start up page
         </form>
     </div>
 </body>
-
 </html>
+{{end}}
