@@ -1,22 +1,32 @@
 {{template "base" .}}
 
-{{define "title"}}Welcome Page{{end}}
-
-{{define "main"}}
+{{define "welcome"}}
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="/static/css/welcome.css" rel="stylesheet" />
+    <title>Trade Wars</title>
+
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/welcome.css" rel="stylesheet" />
 </head>
-<body>
+
+<body>  
     <div>
-        <audio controls autoplay>
-            <source src="strangerthings.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
+        <!-- Audio Plays the Stranger Things theme -->
+        <audio autoplay>
+           <source src="strangerthings.mp3" type="audio/mpeg"> 
+            Your browser does not support the audio element 
         </audio>
-        <h1>TRADE WARS!</h1>
+  
+
+        <h1>TRADE WARS</h1>
         <!-- Will need to connect to server here -->
         <form action="#" method="post">
             <input type="text" id="uname" name="username" placeholder="username">
+            <br>
+            <input type="submit" value="SUBMIT">
         </form>
     </div>
 </body>
+</html>
 {{end}}
