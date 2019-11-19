@@ -17,7 +17,7 @@ h1 {
     text-align: center;
     color: #1c0502;
     font-family: myFancyFont;
-    font-size: 350%;
+    font-size: 400%;
     text-decoration: underline;
     text-shadow: -0.05rem -0.05rem 1px #ed2b12,
     0.05rem -0.05rem 1px #ed2b12,
@@ -38,6 +38,9 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     text-align: left;
+  }
+  span.message {
+    color: #ed2b12;
   }
   
   /* The close button */
@@ -60,7 +63,7 @@ h1 {
 .grid {
     background: #3dd3ed;
     display: grid;
-    grid-auto-rows: 5vw;
+    grid-auto-rows: 7vw;
     grid-gap: .15rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 50px;
@@ -92,7 +95,7 @@ ul {
     height: 300px;
     width: 300px;
     float:right;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
   /* @keyframes blinker {  
