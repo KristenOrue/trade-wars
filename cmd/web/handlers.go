@@ -18,13 +18,13 @@ func welcome(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Include the footer partial in the template files.
-	files := []string{
-		"./ui/html/home.page.tmpl",
-		"./ui/html/base.layout.tmpl",
-		"./ui/html/footer.partial.tmpl",
-		"./ui/html/index.html",
-		"./ui/html/navigation.html",
-	}
+	// files := []string{
+	// 	"./ui/html/home.page.tmpl",
+	// 	"./ui/html/base.layout.tmpl",
+	// 	"./ui/html/footer.partial.tmpl",
+	// 	"./ui/html/index.html",
+	// 	"./ui/html/navigation.html",
+	// }
 
 	ts, err := template.ParseFiles("./ui/html/index.html")
 	//ts, err := template.ParseFiles(files...)
