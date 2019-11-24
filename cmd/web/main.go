@@ -13,6 +13,7 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", redirect)
+	mux.HandleFunc("/welcome", players)
 	mux.HandleFunc("/navigation", navigation)
 	mux.HandleFunc("/players", players)
 
