@@ -1,6 +1,5 @@
-// For instance, if your package is hosted at https://github.com/foo/bar
-// then the module path for the project should be github.com/foo/bar
-
-module kiracorbett/trade-wars
+module github.com/KristenOrue/tradewars
 
 go 1.13
+
+require github.com/joho/godotenv v1.3.0

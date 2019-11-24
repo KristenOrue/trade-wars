@@ -3,11 +3,16 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	godotenv.Load()
+
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", welcome)
+	mux.HandleFunc("/", redirect)
 	mux.HandleFunc("/navigation", navigation)
 	mux.HandleFunc("/players", players)
 
@@ -21,7 +26,8 @@ func main() {
 	// "/static" prefix before the request reaches the file server.
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 
-	log.Println("Starting server on :4000")
-	err := http.ListenAndServe(":4000", mux)
+	port := os.Getenv("PORT")
+	log.Println("Starting server on :" + port)
+	err := http.ListenAndServe(":"+port, mux)
 	log.Fatal(err)
 }

@@ -59,3 +59,7 @@ func navigation(w http.ResponseWriter, r *http.Request) {
 func players(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Showing our players..."))
 }
+
+func redirect(w http.ResponseWriter, r *http.Request) {
+	http.Redirect(w, r, "https://stranger-trade-wars.herokuapp.com/", 303)
+}
