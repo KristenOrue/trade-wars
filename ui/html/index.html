@@ -7,7 +7,7 @@ Info: Basic start up page
 
 <head>
     <title>Trade Wars</title>
-    <link href="ui/static/css/welcome.css" rel="stylesheet"/>
+    <link href="../static/css/welcome.css" rel="stylesheet"/>
 </head>
 
 <body>  
@@ -21,8 +21,8 @@ Info: Basic start up page
 
         <h1>TRADE WARS</h1>
         <!-- Will need to connect to server here -->
-        <form action="#" method="post">
-            <input type="text" id="uname" name="username" placeholder="username">
+        <form action="/players" method="POST">
+            <input type="text" name="callsign" placeholder="callsign">
             <br>
             <input type="submit" value="SUBMIT">
         </form>

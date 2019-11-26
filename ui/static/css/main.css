@@ -1,3 +1,4 @@
+
 /*Navigation Page css*/
 /* Specific Navigation page Styling Elements */
 
@@ -5,12 +6,12 @@
 body {
     background-image: url("../images/space.jpg"); 
     margin: 50px;
-    /* text-align: center; */ */
+    /* text-align: center; */
 }
 
 @font-face {
     font-family: myFancyFont;
-    src: url("../Fonts/BenguiatBold.ttf");
+    src: url("../fonts/BenguiatBold.ttf");
 }
 
 h1 {
