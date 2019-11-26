@@ -56,8 +56,8 @@ func mapHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	callsign := cookie.Value
-	log.Println(callsign) // display callsign
-	w.Write([]byte(callsign))
+	log.Println("Welcome: " + callsign) // display callsign
+	// w.Write([]byte(callsign))
 
 	ts, err := template.ParseFiles("./ui/html/navigation.html")
 	err = ts.Execute(w, nil)
