@@ -13,9 +13,8 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", redirect)
-	mux.HandleFunc("/welcome", players)
-	mux.HandleFunc("/navigation", navigation)
 	mux.HandleFunc("/players", players)
+	mux.HandleFunc("/navigation", navigation)
 
 	// Learn GO: Create a file server which serves files out of the "./ui/static" directory.
 	// Note that the path given to the http.Dir function is relative to the project
