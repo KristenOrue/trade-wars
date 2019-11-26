@@ -1,0 +1,96 @@
+
+/*Navigation Page css*/
+/* Specific Navigation page Styling Elements */
+
+/* Body Styles */
+body {
+    background-image: url("../images/mars.jpg"); 
+    margin: 50px;
+    /* text-align: center; */ */
+}
+
+@font-face {
+    font-family: myFancyFont;
+    src: url("../Fonts/BenguiatBold.ttf");
+}
+
+h1 {
+    float: left;
+    margin-left: 100px;
+    color: #1c0502;
+    font-family: myFancyFont;
+    font-size: 600%;
+    text-decoration: underline;
+    text-shadow: -0.05rem -0.05rem 1px #ed2b12,
+    0.05rem -0.05rem 1px #ed2b12,
+    -0.05rem 0.05rem 1px #ed2b12,
+    0.05rem 0.05rem 1px #450100,
+    0 0 15px #630100,
+    0 0 20px #450100;
+}
+
+/* The status message box */
+.alert {
+    float: right;
+    animation: blinker 3s linear infinite;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: 	#D3D3D3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-right: 50px;;
+  }
+  span.message {
+    color: #ed2b12;
+  }
+  
+  /* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: whitesmoke;
+  }
+
+
+#Cargo {
+    list-style-type: none;
+    color: 	#D3D3D3;
+    text-align: left;
+    font-size: 30px;
+    text-shadow: 3px 2px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url("../images/cargo2.jpg");
+    background-size: cover;                  
+    border:5px solid #3dd3ed;
+    height: 300px;
+    width: 300px;
+    float:right;
+}
+
+#SpaceStation {
+    list-style-type: none;
+    color: 	#D3D3D3;
+    text-align: left;
+    font-size: 30px;
+    text-shadow: 3px 2px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url("../images/spacestation.jpeg");
+    background-size: cover; 
+    border:5px solid #3dd3ed;
+    height: 500px;
+    width: 500px;
+    float:left;
+}
+
+

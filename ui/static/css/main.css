@@ -89,7 +89,7 @@ ul {
     font-size: 30px;
     text-shadow: 3px 2px black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-image: url("../images/cargo2.jpg");
+    background-image: url("../ui/static/images/cargo2.jpg");
     background-size: cover;                  
     border:5px solid #3dd3ed;
     height: 300px;
