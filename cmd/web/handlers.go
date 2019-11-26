@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func welcome(w http.ResponseWriter, r *http.Request) {
+func players(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/" {
 		http.NotFound(w, r)
 		return
@@ -17,49 +17,40 @@ func welcome(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Include the footer partial in the template files.
-	// files := []string{
-	// 	"./ui/html/home.page.tmpl",
-	// 	"./ui/html/base.layout.tmpl",
-	// 	"./ui/html/footer.partial.tmpl",
-	// 	"./ui/html/index.html",
-	// 	"./ui/html/navigation.html",
-	// }
-
-	ts, err := template.ParseFiles("./ui/html/index.html")
-	//ts, err := template.ParseFiles(files...)
-	if err != nil {
-		log.Println(err.Error())
-		http.Error(w, "Internal Server Error", 500)
-		return
+	// if GET method, display "enter your callsign"
+	if r.Method == http.MethodGet {
+		ts, err := template.ParseFiles("./ui/html/index.html")
+		if err != nil {
+			log.Println(err.Error())
+			http.Error(w, "Internal Server Error", 500)
+			return
+		}
+	}   // else display the user's callsign
+	else if r.Method == http.MethodPost {
+		err := r.ParseForm()
+		if err != nil {
+			log.Println(err.Error())
+			http.Error(w, "Internal Server Error", 500)
+		}
 	}
 
-	err = ts.Execute(w, nil)
-	if err != nil {
-		log.Println(err.Error())
-		http.Error(w, "Internal Server Error", 500)
-	}
 }
 
 func navigation(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodGet && r.Method != http.MethodPost {
+		http.Error(w, "Method Not Allowed", 405)
+		return
+	}
+
 	ts, err := template.ParseFiles("./ui/html/navigation.html")
 	if err != nil {
 		log.Println(err.Error())
 		http.Error(w, "Internal Server Error", 500)
 		return
 	}
-
-	err = ts.Execute(w, nil)
-	if err != nil {
-		log.Println(err.Error())
-		http.Error(w, "Internal Server Error", 500)
-	}
-}
-
-func players(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Showing our players..."))
 }
 
 func redirect(w http.ResponseWriter, r *http.Request) {
-	http.Redirect(w, r, "https://stranger-trade-wars.herokuapp.com/", 303)
+	if r.URL.Path == "/" {
+        http.Redirect(w, r, "/players", 303)
 }
