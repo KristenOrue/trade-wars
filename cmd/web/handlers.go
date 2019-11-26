@@ -4,9 +4,10 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"time"
 )
 
-func players(w http.ResponseWriter, r *http.Request) {
+func playersHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet && r.Method != http.MethodPost {
 		http.Error(w, "Method Not Allowed", 405)
 		return
@@ -32,19 +33,33 @@ func players(w http.ResponseWriter, r *http.Request) {
 			log.Println(err.Error())
 			http.Error(w, "Internal Server Error", 500)
 		}
-		http.Redirect(w, r, "/navigation", 303)
-	}
+		// store user's callsign in variable
+		callsign := r.Form.Get("callsign")
+		cookie := http.Cookie{
+			Name:    "callsign",
+			Value:   callsign,
+			Expires: time.Now().AddDate(0, 0, 1),
+			Path:    "/",
+		}
+		http.SetCookie(w, &cookie)
 
+		// redirect to navigation after submitting callsign
+		http.Redirect(w, r, "/map", 303)
+	}
 }
 
-func navigation(w http.ResponseWriter, r *http.Request) {
-	ts, err := template.ParseFiles("./ui/html/navigation.html")
+func mapHandler(w http.ResponseWriter, r *http.Request) {
+	var cookie, err = r.Cookie("callsign")
 	if err != nil {
 		log.Println(err.Error())
-		http.Error(w, "Internal Server Error", 500)
+		http.Error(w, "Internal Server Error: Could not obtain callsign from cookie!", 500)
 		return
 	}
+	callsign := cookie.Value
+	log.Println(callsign) // display callsign
+	w.Write([]byte(callsign))
 
+	ts, err := template.ParseFiles("./ui/html/navigation.html")
 	err = ts.Execute(w, nil)
 	if err != nil {
 		log.Println(err.Error())
