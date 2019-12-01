@@ -61,14 +61,19 @@ h1 {
     color: whitesmoke;
   }
 
+/* Ship */
+img {
+  text-align: center;
+}
 .grid {
     background: #3dd3ed;
     display: grid;
     grid-auto-rows: 7vw;
+    grid-auto-columns: 7vw;
     grid-gap: .15rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right:400px;
   }
 
