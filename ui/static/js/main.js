@@ -14,13 +14,3 @@ var ctx = grid.getContext("2d");
 ctx.moveTo(0,0);
 ctx.lineTo(200,100);
 ctx.stroke();
-
-
-let elem = document.elementFromPoint(x, y);
-let centerX = document.documentElement.clientWidth / 2;
-let centerY = document.documentElement.clientHeight / 2;
-
-let elem = document.elementFromPoint(centerX, centerY);
-
-elem.style.background = "red";
-alert(elem.tagName);
