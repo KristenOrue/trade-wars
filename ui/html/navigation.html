@@ -11,18 +11,7 @@ Info: Basic start up page
     <script type="text/javascript" src="../static/js/main.js"></script>
 </head>
 
-<body>  
-
-    <h1>My First JavaScript Animation</h1>
-
-        <p>
-        <button onclick="myMove()">Click Me</button> 
-        </p>
-        
-        <div id ="myContainer">
-        <div id ="myAnimation">Animation Here</div>
-        </div>
-        
+<body>    
     <!-- Header -->
     <h1>TRADE WARS</h1>
 
@@ -35,7 +24,7 @@ Info: Basic start up page
 
       <!-- Cargo Menu  -->
       <ul type="Cargo">
-            <h2>Cargo</h2>
+            <h2>Cargo</h2><button onclick="myMove()">Move Ship</button> 
             <li>item</li>
             <li>item</li>
             <li>item</li>
@@ -45,7 +34,11 @@ Info: Basic start up page
     <!-- Grid -->
 
     <div id="grid" class="grid">
-        <section class="grid__item"><img src="../static/images/empire.jpg" alt="Empire" style="width:40px;height:40px;"></section>
+
+        <section class="grid__item">
+        <div class="ship">
+            <img id="ship" src="../static/images/empire.jpg" alt="Empire" style="width:40px;height:40px;">
+        </div></section>
         <section class="grid__item"></section>
         <section class="grid__item"></section>
         <section class="grid__item"></section>

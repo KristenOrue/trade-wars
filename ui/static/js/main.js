@@ -16,17 +16,21 @@ ctx.lineTo(200,100);
 ctx.stroke();
 
 
+
 function myMove() {
-	var elem = document.getElementById("myAnimation");
+	var elem = document.getElementById("ship"); 
+    // elem.style.left = '0px';   
+	// elem.style.left = parseInt(elem.style.left) + 10 + 'px'; 
+
 	var pos = 0;
 	var id = setInterval(frame, 10);
 	function frame() {
 	  if (pos == 350) {
 		clearInterval(id);
 	  } else {
-		pos++;
-		elem.style.top = pos + 'px';
-		elem.style.left = pos + 'px';
+		pos++; 
+		elem.style.top = pos + 'px'; 
+		elem.style.left = pos + 'px'; 
 	  }
 	}
   }
