@@ -29,7 +29,12 @@ h1 {
 }
 
 h2 {
-  margin-bottom: -10px;
+    color: 	#D3D3D3;
+    text-align: left;
+    font-size: 40px;
+    text-shadow: 3px 2px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }
 
 /* The status message box */
@@ -96,6 +101,7 @@ h2 {
 
 button {
   float: right;
+  margin-top: 30px;
   margin-right: 20px;
   /* padding: 5px 10px;
   margin: 5px 0; */
@@ -127,11 +133,13 @@ ul {
 
 #control {
   float: right;
-  margin-bottom: 400px;
-  height: 400px;
-  width: 400px; 
+  height: 300px;
+  width: 350px; 
+  background-image: url("../images/control.jpg");
   background-size: cover;                  
   border:5px solid #3dd3ed;
+  margin-top: -200px;
+  margin-bottom:100px;
 }
 
 
