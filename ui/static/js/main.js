@@ -34,3 +34,17 @@ function moveRight() {
 	  }
 	}
   }
+
+  function moveDown() {
+	  var elem = document.getElementById("ship");
+	  var id = setInterval(frame, 0);
+	  function frame() {
+		if (pos == 675) {
+		  clearInterval(id);
+		} else {
+		  pos++; 
+		  elem.style.top = pos + 'px';  
+
+  }
+}
+  }
