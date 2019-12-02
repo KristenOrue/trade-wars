@@ -17,15 +17,15 @@ ctx.stroke();
 
 
 
-function myMove() {
+function moveRight() {
 	var elem = document.getElementById("ship"); 
     // elem.style.left = '0px';   
 	// elem.style.left = parseInt(elem.style.left) + 10 + 'px'; 
 
 	var pos = 0;
-	var id = setInterval(frame, 10);
+	var id = setInterval(frame, 0);
 	function frame() {
-	  if (pos == 350) {
+	  if (pos == 675) {
 		clearInterval(id);
 	  } else {
 		pos++; 

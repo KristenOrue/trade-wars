@@ -95,16 +95,15 @@ h2 {
 } 
 
 button {
-  width: 40%;
-  padding: 5px 10px;
-  margin: 5px 0;
-  /* display: inline-block; */
-  text-align: left;
+  float: right;
+  margin-right: 20px;
+  /* padding: 5px 10px;
+  margin: 5px 0; */
   border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
+  border-radius: 1px;
+  /* box-sizing: border-box;
   font-family: myFancyFont;
-  font-size: 15px; 
+  font-size: 15px;  */
   background: #ed2b12;
 
 }
@@ -122,8 +121,19 @@ ul {
     height: 300px;
     width: 300px;
     float:right;
-    margin-top: 100px;
+    margin-top: 50px;
 }
+
+
+#control {
+  float: right;
+  margin-bottom: 400px;
+  height: 400px;
+  width: 400px; 
+  background-size: cover;                  
+  border:5px solid #3dd3ed;
+}
+
 
   /* @keyframes blinker {  
       100% { opacity: 10; }
