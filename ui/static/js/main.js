@@ -58,16 +58,16 @@ function init(){
 function getMove(e){				
 	var key_code=e.which||e.keyCode;
 		switch(key_code){
-			case 37: // left arrow key
+			case 65: // A arrow key
 				moveLeft();
 				break;
-			case 38: // up arrow key
+			case 87: // W arrow key
 				moveUp();
 				break;
-			case 39: // right arrow key
+			case 68: // D arrow key
 				moveRight();
 				break;
-			case 40: // down arrow key
+			case 83: // S arrow key
 				moveDown();
 				break;						
 		}
