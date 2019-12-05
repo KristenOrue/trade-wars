@@ -74,19 +74,19 @@ function getMove(e){
 	}
 
 	function moveLeft(){
-		objImage.style.left=parseInt(objImage.style.left)-5 +'px';
+		objImage.style.left=parseInt(objImage.style.left)-9 +'px';
 	}
 
 	function moveUp(){
-		objImage.style.top=parseInt(objImage.style.top)-5 +'px';
+		objImage.style.top=parseInt(objImage.style.top)-9 +'px';
 	}
 
 	function moveRight(){
-		objImage.style.left=parseInt(objImage.style.left)+5 +'px';
+		objImage.style.left=parseInt(objImage.style.left)+9 +'px';
 	}
 
 	function moveDown(){
-		objImage.style.top=parseInt(objImage.style.top)+5 +'px';
+		objImage.style.top=parseInt(objImage.style.top)+9 +'px';
 	}
 
 	window.onload=init;
