@@ -58,6 +58,9 @@ func mapHandler(w http.ResponseWriter, r *http.Request) {
 	callsign := cookie.Value
 	log.Println("Welcome: " + callsign) // display callsign
 	// w.Write([]byte(callsign))
+	//templateData := map[string]interface{}{
+	//"callsign": callsign,
+	//}
 
 	ts, err := template.ParseFiles("./ui/html/navigation.html")
 	err = ts.Execute(w, nil)
@@ -66,6 +69,19 @@ func mapHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Internal Server Error", 500)
 	}
 }
+
+// Yong's class demo
+// func getMap(w http.ResponseWriter, r *http.Request) {
+// 	if !isRegistered(r) {
+// 		http.Redirect(w, r, "/players", http.StatusSeeOther); return
+// 	}
+// 	if strings.Contains(r.Header.Get("Accept"), "json") {
+// 		else {
+//w.Header().Set("Content-Type", "application/json")
+//w.Write([]bye("{\"foo\":\"bar\"}"))
+// 		}
+// 	}
+// }
 
 func redirect(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path == "/" {

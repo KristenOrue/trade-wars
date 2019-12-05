@@ -11,7 +11,8 @@ Info: Basic start up page
     <script type="text/javascript" src="../static/js/main.js"></script>
 </head>
 
-<body>    
+<body onkeydown='getMove(event)'>
+       
     <!-- Header -->
     <h1>TRADE WARS</h1>
 
@@ -34,10 +35,9 @@ Info: Basic start up page
     <!-- Grid -->
 
     <div id="grid" class="grid">
-
         <section class="grid__item">
         <div class="ship">
-            <img id="ship" src="../static/images/empire.jpg" alt="Empire" style="width:40px;height:40px;">
+            <img id="player1_ship" src="../static/images/empire.jpg" alt="Empire" style="width:40px;height:40px;">
         </div></section>
         <section class="grid__item"></section>
         <section class="grid__item"></section>
@@ -90,7 +90,7 @@ Info: Basic start up page
         <section class="grid__item"></section>
         <section class="grid__item"></section>
         <section class="grid__item"></section>
-        <section class="grid__item"><img src="../static/images/firstorder.jpg" alt="Empire" style="width:40px;height:40px;"></section>
+        <section class="grid__item"><img id="player2_ship" src="../static/images/firstorder.jpg" alt="Empire" style="width:40px;height:40px;"></section>
         <section class="grid__item"></section>
         <section class="grid__item"></section>
         <section class="grid__item"></section>
@@ -98,11 +98,12 @@ Info: Basic start up page
         <section class="grid__item"></section>
         <section class="grid__item"></section>
         <section class="grid__item"></section>
-      </div>
+    </div>
       
     <!-- Control panel -->
     <div width="400" height="400" id="control">
-    <h2>CONTROL PANEL</h2><button onclick="moveRight()"><img id="rightarrow" src="../static/images/rightarrow.jpg" alt="rightarrow" style="width:40px;height:40px;"></button> 
+    <h2>CONTROL PANEL</h2>
+    <button onclick="moveRight()"><img id="rightarrow" src="../static/images/rightarrow.jpg" alt="rightarrow" style="width:40px;height:40px;"></button> 
     <button onclick="moveDown()"><img id="downarrow" src="../static/images/downarrow.jpg" alt="downarrow" style="width:40px;height:40px;"></button> 
     <button onclick="moveUp()"><img id="uparrow" src="../static/images/uparrow.jpg" alt="uparrow" style="width:40px;height:40px;"></button>
     <button onclick="moveLeft()"><img id="leftarrow" src="../static/images/leftarrow.jpg" alt="leftarrow" style="width:40px;height:40px;"></button>  
