@@ -10,46 +10,12 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 var canvas = document.getElementsByClassName("grid");
-var elem = document.getElementById("ship");
-
-// ctx.moveTo(0,0);
-// ctx.lineTo(200,100);
-// ctx.stroke();  
-
-function moveRight() {
-	var elem = document.getElementById("ship"); 
-    // elem.style.left = '0px';   
-	// elem.style.left = parseInt(elem.style.left) + 10 + 'px'; 
-
-	var pos = 0;
-	var id = setInterval(frame, 0);
-	function frame() {
-	  if (pos == 675) {
-		clearInterval(id);
-	  } else {
-		pos++; 
-		// elem.style.top = pos + 'px'; 
-		elem.style.left = pos + 'px'; 
-	  }
-	}
-  }
-
-function moveDown() {
-	var elem = document.getElementById("ship");
-	var id = setInterval(frame, 0);
-	function frame() {
-		if (pos == 675) {
-		clearInterval(id);
-		} else {
-		pos++; 
-		elem.style.top = pos + 'px';  
-		}
-	}
-}
+var elem = document.getElementById("ship");  
 
 var objImage= null;
+
 function init(){
-	objImage=document.getElementById("ship");				
+	objImage=document.getElementById("player1_ship");				
 	objImage.style.position='relative';
 	objImage.style.left='0px';
 	objImage.style.top='0px';
@@ -90,3 +56,35 @@ function getMove(e){
 	}
 
 	window.onload=init;
+
+
+// function moveRight() {
+// 	var elem = document.getElementById("ship"); 
+//     // elem.style.left = '0px';   
+// 	// elem.style.left = parseInt(elem.style.left) + 10 + 'px'; 
+
+// 	var pos = 0;
+// 	var id = setInterval(frame, 0);
+// 	function frame() {
+// 	  if (pos == 675) {
+// 		clearInterval(id);
+// 	  } else {
+// 		pos++; 
+// 		// elem.style.top = pos + 'px'; 
+// 		elem.style.left = pos + 'px'; 
+// 	  }
+// 	}
+//   }
+
+// function moveDown() {
+// 	var elem = document.getElementById("ship");
+// 	var id = setInterval(frame, 0);
+// 	function frame() {
+// 		if (pos == 675) {
+// 		clearInterval(id);
+// 		} else {
+// 		pos++; 
+// 		elem.style.top = pos + 'px';  
+// 		}
+// 	}
+// }
