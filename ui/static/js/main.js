@@ -9,13 +9,12 @@ for (var i = 0; i < navLinks.length; i++) {
 	}
 }
 
-var grid = document.getElementsByClassName("grid");
-var ctx = grid.getContext("2d");
-ctx.moveTo(0,0);
-ctx.lineTo(200,100);
-ctx.stroke();
+var canvas = document.getElementsByClassName("grid");
+var elem = document.getElementById("ship");
 
-
+// ctx.moveTo(0,0);
+// ctx.lineTo(200,100);
+// ctx.stroke();  
 
 function moveRight() {
 	var elem = document.getElementById("ship"); 
@@ -35,16 +34,59 @@ function moveRight() {
 	}
   }
 
-  function moveDown() {
-	  var elem = document.getElementById("ship");
-	  var id = setInterval(frame, 0);
-	  function frame() {
+function moveDown() {
+	var elem = document.getElementById("ship");
+	var id = setInterval(frame, 0);
+	function frame() {
 		if (pos == 675) {
-		  clearInterval(id);
+		clearInterval(id);
 		} else {
-		  pos++; 
-		  elem.style.top = pos + 'px';  
-
-  }
+		pos++; 
+		elem.style.top = pos + 'px';  
+		}
+	}
 }
-  }
+
+var objImage= null;
+function init(){
+	objImage=document.getElementById("ship");				
+	objImage.style.position='relative';
+	objImage.style.left='0px';
+	objImage.style.top='0px';
+}
+
+function getMove(e){				
+	var key_code=e.which||e.keyCode;
+		switch(key_code){
+			case 37: // left arrow key
+				moveLeft();
+				break;
+			case 38: // up arrow key
+				moveUp();
+				break;
+			case 39: // right arrow key
+				moveRight();
+				break;
+			case 40: // down arrow key
+				moveDown();
+				break;						
+		}
+	}
+
+	function moveLeft(){
+		objImage.style.left=parseInt(objImage.style.left)-5 +'px';
+	}
+
+	function moveUp(){
+		objImage.style.top=parseInt(objImage.style.top)-5 +'px';
+	}
+
+	function moveRight(){
+		objImage.style.left=parseInt(objImage.style.left)+5 +'px';
+	}
+
+	function moveDown(){
+		objImage.style.top=parseInt(objImage.style.top)+5 +'px';
+	}
+
+	window.onload=init;
