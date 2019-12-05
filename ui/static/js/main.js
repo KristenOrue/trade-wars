@@ -28,8 +28,7 @@ function moveRight() {
 	  if (pos == 675) {
 		clearInterval(id);
 	  } else {
-		pos++; 
-		// elem.style.top = pos + 'px'; 
+		pos++;  
 		elem.style.left = pos + 'px'; 
 	  }
 	}
